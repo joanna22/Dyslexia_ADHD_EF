@@ -1,0 +1,154 @@
+<PsychoPy2experiment version="1.80.03" encoding="utf-8">
+  <Settings>
+    <Param name="Show mouse" val="False" valType="bool" updates="None"/>
+    <Param name="Data filename" val="u'data' + os.path.sep + '%s_%s' %(expInfo['participant'], expInfo['date'])" valType="code" updates="None"/>
+    <Param name="Monitor" val="testMonitor" valType="str" updates="None"/>
+    <Param name="Enable Escape" val="True" valType="bool" updates="None"/>
+    <Param name="color" val="$[-1,-1,-1]" valType="str" updates="None"/>
+    <Param name="Window size (pixels)" val="[1024, 768]" valType="code" updates="None"/>
+    <Param name="Full-screen window" val="True" valType="bool" updates="None"/>
+    <Param name="colorSpace" val="rgb" valType="str" updates="None"/>
+    <Param name="Experiment info" val="{u'session': u'001', u'participant': u''}" valType="code" updates="None"/>
+    <Param name="Save csv file" val="False" valType="bool" updates="None"/>
+    <Param name="Show info dlg" val="True" valType="bool" updates="None"/>
+    <Param name="Save wide csv file" val="True" valType="bool" updates="None"/>
+    <Param name="Save psydat file" val="True" valType="bool" updates="None"/>
+    <Param name="expName" val="Phono_words_120824cp" valType="str" updates="None"/>
+    <Param name="logging level" val="exp" valType="code" updates="None"/>
+    <Param name="blendMode" val="avg" valType="str" updates="None"/>
+    <Param name="Save excel file" val="True" valType="bool" updates="None"/>
+    <Param name="Units" val="use prefs" valType="str" updates="None"/>
+    <Param name="Save log file" val="True" valType="bool" updates="None"/>
+    <Param name="Screen" val="2" valType="num" updates="None"/>
+  </Settings>
+  <Routines>
+    <Routine name="words_run">
+      <KeyboardComponent name="key_resp_words_run">
+        <Param name="correctAns" val="$CorrAns_words" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="True" valType="bool" updates="constant"/>
+        <Param name="name" val="key_resp_words_run" valType="code" updates="None"/>
+        <Param name="stopVal" val="$Duration_words" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="False" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'1','2','3','4','num_1','num_2','num_3','num_4'" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="all keys" valType="str" updates="constant"/>
+      </KeyboardComponent>
+      <ImageComponent name="image_words_run">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="flipVert" val="False" valType="bool" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="image_words_run" valType="code" updates="constant"/>
+        <Param name="color" val="$[1,1,1]" valType="str" updates="constant"/>
+        <Param name="stopVal" val="$Duration_words" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="mask" val="None" valType="str" updates="constant"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="interpolate" val="linear" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="texture resolution" val="128" valType="code" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="flipHoriz" val="False" valType="bool" updates="constant"/>
+        <Param name="image" val="$stim_words" valType="str" updates="set every repeat"/>
+        <Param name="size" val="[1.8, 1.8]" valType="code" updates="constant"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="instructions">
+      <KeyboardComponent name="key_resp_instr_words">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="key_resp_instr_words" valType="code" updates="None"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="True" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="'plus','+','5','num_5','num_add'" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+      <TextComponent name="text_instr_words">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="text_instr_words" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="Get ready!" valType="str" updates="constant"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.15" valType="code" updates="constant"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="words_bye">
+      <TextComponent name="text_words_bye">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="text_words_bye" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="Great job!" valType="str" updates="constant"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="0.1" valType="code" updates="constant"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="correctAns" val="" valType="str" updates="constant"/>
+        <Param name="storeCorrect" val="False" valType="bool" updates="constant"/>
+        <Param name="name" val="key_resp_2" valType="code" updates="None"/>
+        <Param name="stopVal" val="" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="forceEndRoutine" val="True" valType="bool" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="discard previous" val="True" valType="bool" updates="constant"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="allowedKeys" val="" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="0.0" valType="code" updates="None"/>
+        <Param name="store" val="last key" valType="str" updates="constant"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instructions"/>
+    <LoopInitiator loopType="TrialHandler" name="words_run_loop">
+      <Param name="conditionsFile" val="phono_words_stimuli.csv" valType="str" updates="None"/>
+      <Param name="name" val="words_run_loop" valType="code" updates="None"/>
+      <Param name="random seed" val="" valType="code" updates="None"/>
+      <Param name="loopType" val="sequential" valType="str" updates="None"/>
+      <Param name="nReps" val="1" valType="code" updates="None"/>
+      <Param name="endPoints" val="[0, 1]" valType="num" updates="None"/>
+      <Param name="conditions" val="[{'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rhymered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_shadowvalue.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_rewardrecord.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_essayvision.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_needletoken.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_canoeissue.jpg', 'TrialType_words': 1}, {'Duration_words': 20, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/fix.png', 'TrialType_words': 3}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/samered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/1trial1.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/1trial2.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/1trial3.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/1trial4.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/1trial5.jpg', 'TrialType_words': 2}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rhymered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_saladracket.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_feelinghoney.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_reviewdebut.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_cherryfairy.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_widowprayer.jpg', 'TrialType_words': 1}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/samered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/2trial1.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/2trial3.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/2trial4.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/2trial5.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/2trial6.jpg', 'TrialType_words': 2}, {'Duration_words': 20, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/fix.png', 'TrialType_words': 3}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rhymered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_cologneunknown.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_unionradio.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_canteenhygiene.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_revengetheory.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_womanbagpipe.jpg', 'TrialType_words': 1}, {'Duration_words': 20, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/fix.png', 'TrialType_words': 3}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/samered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/3trial1.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/3trial2.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/3trial3.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/3trial4.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/3trial5.jpg', 'TrialType_words': 2}, {'Duration_words': 20, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/fix.png', 'TrialType_words': 3}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rhymered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_paletteballot.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_shiverswallow.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_quartermortar.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_chapelapple.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_emotionocean.jpg', 'TrialType_words': 1}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/samered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/4trial1.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/4trial2.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/4trial4.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/4trial5.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/4trial6.jpg', 'TrialType_words': 2}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rhymered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_marbletemper.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_troublebubble.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_silencesavage.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_mysteryhistory.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_salarygallery.jpg', 'TrialType_words': 1}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/samered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/5trial1.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/5trial3.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/5trial4.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/5trial5.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/5trial6.jpg', 'TrialType_words': 2}, {'Duration_words': 20, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/fix.png', 'TrialType_words': 3}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rhymered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_steeplepeople.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_retreatdeceit.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_ticketthinker.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_tallynation.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_agencywisdom.jpg', 'TrialType_words': 1}, {'Duration_words': 20, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/fix.png', 'TrialType_words': 3}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/samered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/6trial1.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/6trial2.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/6trial3.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/6trial4.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/6trial6.jpg', 'TrialType_words': 2}, {'Duration_words': 20, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/fix.png', 'TrialType_words': 3}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/samered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/0trial1.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/0trial2.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/0trial3.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/0trial4.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/0trial5.jpg', 'TrialType_words': 2}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rhymered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_paperkitten.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_receiptrepeat.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_designincline.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_victorycareer.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_metalkettle.jpg', 'TrialType_words': 1}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/samered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/1trial6.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/2trial2.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/3trial6.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/4trial3.jpg', 'TrialType_words': 2}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/5trial2.jpg', 'TrialType_words': 2}, {'Duration_words': 20, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/fix.png', 'TrialType_words': 3}, {'Duration_words': 2, 'CorrAns_words': -1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rhymered.jpg', 'TrialType_words': 4}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_cousindozen.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_openingembrace.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 1, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/ry_dairyprairie.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_novelsilver.jpg', 'TrialType_words': 1}, {'Duration_words': 4, 'CorrAns_words': 2, 'stim_words': u'/Users/JACRA/Desktop/RAISE_scan tasks/RAISE-phono_words/PhonoTask_Stim/all_trial_jpegs/rn_denialimprint.jpg', 'TrialType_words': 1}]" valType="str" updates="None"/>
+    </LoopInitiator>
+    <Routine name="words_run"/>
+    <LoopTerminator name="words_run_loop"/>
+    <Routine name="words_bye"/>
+  </Flow>
+</PsychoPy2experiment>
