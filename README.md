@@ -8,6 +8,8 @@ Accompanying files:
   RAISE_EF_public_V2.csv This file contains the dataset and variables reported in the manuscript.
   RAISE_EF_public_codebook.xlsx This file explains what each variable name represents.
   
+Legal copyright restrictions prevent public archiving of the various assessments and tests used in this study, which can be obtained from the copyright holders in the cited references in this section. All behavioral data can be found at: https://github.com/joanna22/Dyslexia_ADHD_EF
+  
 Credits: Noor Z. Al Dahhan1,2, Kelly Halverson1,3, Carrie P. Peek1,4, Dayna Wilmot1, Anila D’Mello1, Rachel R. Romeo1, Olivia Meegoda2, Andrea Imhof1,2, Karolina Wade1, 
 Anissa Sridhar1, Eric Falke1,5, Tracy M. Centanni1,6, John D. E. Gabrieli1, Joanna A. Christodoulou1,2
  
